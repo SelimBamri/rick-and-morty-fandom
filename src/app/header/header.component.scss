@@ -1,0 +1,22 @@
+.custom-toolbar {
+  background-color: #88d66c;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  &:hover {
+    font-weight: 450;
+  }
+}
+
+.active {
+  font-weight: 450;
+  text-decoration: underline;
+}

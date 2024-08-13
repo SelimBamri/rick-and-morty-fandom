@@ -1,0 +1,17 @@
+<mat-toolbar class="custom-toolbar">
+  <mat-toolbar-row>
+    <img [src]="logoUrl" width="19%" height="auto" alt="Logo" />
+    <span class="spacer"></span>
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="" routerLinkActive="active">Characters</a>
+    <a routerLink="" routerLinkActive="active">Locations</a>
+    <a routerLink="" routerLinkActive="active">Episodes</a>
+    <span class="spacer"></span>
+    <img [src]="logo1Url" width="5%" height="auto" alt="Logo" />
+  </mat-toolbar-row>
+</mat-toolbar>
