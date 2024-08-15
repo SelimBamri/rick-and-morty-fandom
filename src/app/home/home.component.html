@@ -19,7 +19,13 @@
       <p style="margin-bottom: 1.5rem">Explore the website</p>
       <div class="row">
         <div class="col-4">
-          <button mat-raised-button color="primary">Characters</button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="navigateToCharacters()"
+          >
+            Characters
+          </button>
         </div>
         <div class="col-4">
           <button mat-raised-button color="primary">locations</button>
