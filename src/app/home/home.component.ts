@@ -14,4 +14,7 @@ export class HomeComponent {
   navigateToCharacters() {
     this.router.navigate(['/characters']);
   }
+  navigateToLocations() {
+    this.router.navigate(['/locations']);
+  }
 }

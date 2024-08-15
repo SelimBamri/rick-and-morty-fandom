@@ -28,7 +28,13 @@
           </button>
         </div>
         <div class="col-4">
-          <button mat-raised-button color="primary">locations</button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="navigateToLocations()"
+          >
+            locations
+          </button>
         </div>
         <div class="col-4">
           <button mat-raised-button color="primary">Episodes</button>

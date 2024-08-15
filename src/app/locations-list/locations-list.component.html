@@ -1,0 +1,22 @@
+<mat-paginator
+  [length]="totalItems"
+  [pageSize]="pageSize"
+  [pageIndex]="currentPage"
+  (page)="pageChanged($event)"
+  style="margin-bottom: 3rem"
+></mat-paginator>
+<div class="row" *ngIf="locations$ | async as locations; else loading">
+  <app-location-card
+    style="margin-bottom: 2rem"
+    class="col-3"
+    *ngFor="let location of locations"
+    [location]="location"
+  />
+</div>
+<mat-paginator
+  [length]="totalItems"
+  [pageSize]="pageSize"
+  [pageIndex]="currentPage"
+  (page)="pageChanged($event)"
+></mat-paginator>
+<ng-template #loading>Loading characters...</ng-template>
