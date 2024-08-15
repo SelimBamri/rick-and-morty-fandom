@@ -1,6 +1,12 @@
 <mat-toolbar class="custom-toolbar">
   <mat-toolbar-row>
-    <img [src]="logoUrl" width="19%" height="auto" alt="Logo" />
+    <img
+      [src]="logoUrl"
+      width="19%"
+      height="auto"
+      alt="Logo"
+      (click)="navigateToHome()"
+    />
     <span class="spacer"></span>
     <a
       routerLink=""

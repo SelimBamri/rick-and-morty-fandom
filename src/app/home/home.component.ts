@@ -17,4 +17,7 @@ export class HomeComponent {
   navigateToLocations() {
     this.router.navigate(['/locations']);
   }
+  navigateToEpisodes() {
+    this.router.navigate(['/episodes']);
+  }
 }

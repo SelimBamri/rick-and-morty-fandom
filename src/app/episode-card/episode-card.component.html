@@ -1,0 +1,13 @@
+<mat-card class="episode-card">
+  <mat-card-header style="margin-bottom: 1rem">
+    <mat-card-title>{{ episode.name }}</mat-card-title>
+    <mat-card-subtitle><b>Season: </b> {{ episode.season }}</mat-card-subtitle>
+    <mat-card-subtitle
+      ><b>Episode: </b> {{ episode.episodeNumber }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content style="margin-top: 1rem">
+    The episode was aired on <b>{{ episode.airDate | date }}</b> and featured
+    <b>{{ episode.numberOfCharacters }} characters.</b>
+  </mat-card-content>
+</mat-card>

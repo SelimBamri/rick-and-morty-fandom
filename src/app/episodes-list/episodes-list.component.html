@@ -5,12 +5,12 @@
   (page)="pageChanged($event)"
   style="margin-bottom: 3rem"
 ></mat-paginator>
-<div class="row" *ngIf="locations$ | async as locations; else loading">
-  <app-location-card
+<div class="row" *ngIf="episodes$ | async as episodes; else loading">
+  <app-episode-card
     style="margin-bottom: 2rem"
     class="col-3"
-    *ngFor="let location of locations"
-    [location]="location"
+    *ngFor="let episode of episodes"
+    [episode]="episode"
   />
 </div>
 <mat-paginator
@@ -19,4 +19,4 @@
   [pageIndex]="currentPage"
   (page)="pageChanged($event)"
 ></mat-paginator>
-<ng-template #loading>Loading locations...</ng-template>
+<ng-template #loading>Loading episodes...</ng-template>
